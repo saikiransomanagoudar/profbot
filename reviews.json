@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Smith",
+        "subject": "Introduction to Psychology",
+        "stars": 5,
+        "review": "Dr. Smith is an amazing professor. His lectures are engaging, and he genuinely cares about his students."
+      },
+      {
+        "professor": "Dr. Emily Johnson",
+        "subject": "Advanced Calculus",
+        "stars": 3,
+        "review": "The course is challenging, but Dr. Johnson explains concepts clearly. However, the exams are quite difficult."
+      },
+      {
+        "professor": "Dr. Michael Lee",
+        "subject": "Organic Chemistry",
+        "stars": 4,
+        "review": "Dr. Lee's lectures are well-organized and informative, but the workload is heavy."
+      },
+      {
+        "professor": "Dr. Sarah Brown",
+        "subject": "World History",
+        "stars": 2,
+        "review": "The lectures are a bit dry, and it's hard to stay focused. The grading is fair, though."
+      },
+      {
+        "professor": "Dr. David Williams",
+        "subject": "Computer Science 101",
+        "stars": 5,
+        "review": "Dr. Williams is very knowledgeable and always willing to help. His assignments are challenging but fair."
+      },
+      {
+        "professor": "Dr. Jessica Davis",
+        "subject": "Philosophy of Mind",
+        "stars": 4,
+        "review": "Dr. Davis presents thought-provoking ideas, but her lectures can be hard to follow at times."
+      },
+      {
+        "professor": "Dr. Daniel Miller",
+        "subject": "Physics II",
+        "stars": 3,
+        "review": "The course content is interesting, but Dr. Miller's teaching style is not very engaging."
+      },
+      {
+        "professor": "Dr. Anna Wilson",
+        "subject": "Sociology 101",
+        "stars": 4,
+        "review": "Dr. Wilson is passionate about the subject and encourages class participation."
+      },
+      {
+        "professor": "Dr. Christopher Moore",
+        "subject": "Economics",
+        "stars": 5,
+        "review": "Dr. Moore explains complex concepts in a simple way. His classes are always interesting."
+      },
+      {
+        "professor": "Dr. Laura Taylor",
+        "subject": "Biology",
+        "stars": 2,
+        "review": "The lectures are not very interactive, and the exams are tough. It's hard to keep up with the material."
+      },
+      {
+        "professor": "Dr. James Anderson",
+        "subject": "Introduction to Literature",
+        "stars": 5,
+        "review": "Dr. Anderson makes literature come alive. His enthusiasm is contagious."
+      },
+      {
+        "professor": "Dr. Patricia Thomas",
+        "subject": "Statistics",
+        "stars": 3,
+        "review": "The course is well-structured, but Dr. Thomas's explanations can be confusing."
+      },
+      {
+        "professor": "Dr. Robert Jackson",
+        "subject": "Political Science",
+        "stars": 4,
+        "review": "Dr. Jackson is knowledgeable and presents the material in an engaging way. His exams are fair."
+      },
+      {
+        "professor": "Dr. Jennifer White",
+        "subject": "Introduction to Ethics",
+        "stars": 5,
+        "review": "Dr. White is an excellent professor. Her lectures are insightful, and she encourages critical thinking."
+      },
+      {
+        "professor": "Dr. Kevin Martinez",
+        "subject": "Art History",
+        "stars": 2,
+        "review": "The course content is interesting, but Dr. Martinez's lectures are monotonous and hard to follow."
+      },
+      {
+        "professor": "Dr. Susan Clark",
+        "subject": "Microeconomics",
+        "stars": 4,
+        "review": "Dr. Clark explains the material well and is always available for questions."
+      },
+      {
+        "professor": "Dr. Charles Rodriguez",
+        "subject": "Environmental Science",
+        "stars": 5,
+        "review": "Dr. Rodriguez is passionate about the subject and inspires his students to care about the environment."
+      },
+      {
+        "professor": "Dr. Angela Lewis",
+        "subject": "Spanish 101",
+        "stars": 3,
+        "review": "Dr. Lewis is a good instructor, but the pace of the course is very fast."
+      },
+      {
+        "professor": "Dr. Brian Walker",
+        "subject": "Introduction to Marketing",
+        "stars": 4,
+        "review": "Dr. Walker's classes are interesting, and he provides real-world examples to explain concepts."
+      },
+      {
+        "professor": "Dr. Mary Hall",
+        "subject": "Organic Chemistry Lab",
+        "stars": 2,
+        "review": "The lab is disorganized, and the instructions are not clear. It can be frustrating at times."
+      }
+    ]
+  }
+  
