@@ -1,20 +1,5 @@
 # Rate My Professor
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Contributors](https://img.shields.io/badge/contributors-1-orange)
-
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Running the Project](#running-the-project)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## About the Project
 
 **Rate My Professor** is a web application that allows students to rate and review their professors. The platform provides a space for students to share their experiences and helps others in choosing the right professor for their academic needs.
