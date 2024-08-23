@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rate My Professor
+
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Contributors](https://img.shields.io/badge/contributors-1-orange)
+
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## About the Project
+
+**Rate My Professor** is a web application that allows students to rate and review their professors. The platform provides a space for students to share their experiences and helps others in choosing the right professor for their academic needs.
+
+## Features
+
+- **Search Functionality**: Find professors by name, department, or university.
+- **Rating System**: Rate professors based on criteria like teaching quality, clarity, and helpfulness.
+- **Responsive Design**: Accessible on all devices.
+
+## Tech Stack
+
+- **Frontend**: React, Next.js, 
+- **Backend**: Node.js, Python
+- **Database**: Pinecone
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/saikiransomanagoudar/rate-my-professor.git
+    cd rate-my-professor
+    ```
+
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Create a `.env.local` file in the root directory and add the following environment variables:
+    ```plaintext
+    NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
+    PINECONE_API_KEY=your_pinecone_api_key
+    PINECONE_ENVIRONMENT=your_pinecone_environment
+    ```
+
+### Running the Project
+
+To start the development server:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
