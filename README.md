@@ -2,7 +2,7 @@
 
 ## About the Project
 
-**Rate My Professor** is a web application that allows students to rate and review their professors. The platform provides a space for students to share their experiences and helps others in choosing the right professor for their academic needs.
+**Rate My Professor** is a chatbot helps students in choosing the right professor for their academic needs based on rating, subject, and skills.
 
 ## Features
 
