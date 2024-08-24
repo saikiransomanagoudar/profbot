@@ -2,7 +2,7 @@
 
 ## About the Project
 
-**Rate My Professor** is a chatbot helps students in choosing the right professor for their academic needs based on rating, subject, and skills.
+**Rate My Professor** is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.
 
 ## Features
 
