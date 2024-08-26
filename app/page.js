@@ -111,7 +111,7 @@ export default function Home() {
           ))}
           {loading && (
             <Box alignSelf="flex-start" padding={2}>
-              Typing...
+              Thinking...
             </Box>
           )}
         </Stack>
