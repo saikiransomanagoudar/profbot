@@ -2,12 +2,11 @@
 
 ## About the Project
 
-**Rate My Professor** is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.
+**ProfBot** is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.
 
 ## Features
 
-- **Search Functionality**: Find professors by name, department, or university.
-- **Rating System**: Rate professors based on criteria like teaching quality, clarity, and helpfulness.
+- **Search Functionality**: Find professors by name, department, or university. Professors based on criteria like teaching quality, clarity, and helpfulness.
 - **Responsive Design**: Accessible on all devices.
 
 ## Tech Stack
@@ -23,8 +22,8 @@
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/saikiransomanagoudar/rate-my-professor.git
-    cd rate-my-professor
+    git clone https://github.com/saikiransomanagoudar/profbot.git
+    cd profbot
     ```
 
 2. Install dependencies:
