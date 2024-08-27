@@ -1,4 +1,4 @@
-# Rate My Professor
+# ProfBot
 
 ## About the Project
 
