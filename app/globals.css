@@ -129,3 +129,167 @@
 .chatHistory::-webkit-scrollbar-thumb:hover {
   background: #00cc00;
 }
+
+/* Mode toggle button */
+.modeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.light .modeToggle {
+  background-color: #f0f0f0;
+}
+
+.dark .modeToggle {
+  background-color: #333333;
+}
+
+.modeToggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .modeToggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Light mode styles */
+.light {
+  background-color: #f0f0f0;
+}
+
+.light .logo {
+  color: #006600;
+  text-shadow: 0 0 10px #006600, 0 0 20px #006600, 0 0 30px #006600;
+}
+
+.light .chatContainer {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #006600;
+}
+
+.light .userMessage {
+  background-color: #e6ffe6;
+  color: #003300;
+  border: 1px solid #006600;
+}
+
+.light .botMessage {
+  background-color: #f0fff0;
+  color: #003300;
+  border: 1px solid #006600;
+}
+
+.light .input {
+  background-color: #ffffff;
+  color: #003300;
+}
+
+.light .input::placeholder {
+  color: #006600;
+}
+
+.light .sendButton {
+  background-color: #006600;
+  color: #ffffff;
+}
+
+.light .sendButton:hover {
+  background-color: #008800;
+  box-shadow: 0 0 10px #006600;
+}
+
+.light .sendButton:disabled {
+  background-color: #ccffcc;
+}
+
+/* Dark mode styles (default) */
+.dark {
+  background-color: #000000;
+}
+
+/* ... rest of the dark mode styles (same as before) ... */
+
+/* Transition for smooth mode switching */
+.main, .chatContainer, .userMessage, .botMessage, .input, .sendButton {
+  transition: all 0.3s ease;
+}
+
+/* Update the input styles for both light and dark modes */
+.input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #00ff00;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  background-color: #111111;
+  color: #00ff00;
+}
+
+.input::placeholder {
+  color: #008800;
+}
+
+/* Override MUI TextField styles */
+.input .MuiOutlinedInput-root {
+  color: #00ff00;
+}
+
+.input .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff00;
+}
+
+.input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff00;
+}
+
+.input.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff00;
+}
+
+.input .MuiInputLabel-root {
+  color: #008800;
+}
+
+.input .MuiInputLabel-root.Mui-focused {
+  color: #00ff00;
+}
+
+/* Light mode specific input styles */
+.light .input {
+  background-color: #ffffff;
+  color: #003300;
+}
+
+.light .input::placeholder {
+  color: #006600;
+}
+
+.light .input .MuiOutlinedInput-root {
+  color: #003300;
+}
+
+.light .input .MuiOutlinedInput-notchedOutline {
+  border-color: #006600;
+}
+
+.light .input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #006600;
+}
+
+.light .input.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #006600;
+}
+
+.light .input .MuiInputLabel-root {
+  color: #006600;
+}
+
+.light .input .MuiInputLabel-root.Mui-focused {
+  color: #006600;
+}

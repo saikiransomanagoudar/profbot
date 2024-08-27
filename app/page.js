@@ -15,6 +15,7 @@ export default function Home() {
   ]);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const chatHistoryRef = useRef(null);
 
   const sendMessage = async () => {
@@ -79,6 +80,10 @@ export default function Home() {
     }
   }, [messages]);
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <Box
       width="100vw"
@@ -87,9 +92,14 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      className="main"
+      className={`main ${darkMode ? 'dark' : 'light'}`}
     >
-      <h1 className={`logo ${orbitron.className}`}>ProfBot</h1>
+      <Box display="flex" justifyContent="space-between" alignItems="center" width="100%" maxWidth="600px" mb={2}>
+        <h1 className={`logo ${orbitron.className}`}>ProfBot</h1>
+        <button onClick={toggleDarkMode} className="modeToggle">
+          {darkMode ? '☀️' : '🌙'}
+        </button>
+      </Box>
       <div className="chatContainer">
         <div className="chatHistory" ref={chatHistoryRef}>
           {messages.map((msg, index) => (
