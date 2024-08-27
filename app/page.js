@@ -1,16 +1,22 @@
 "use client";
-import { useState } from "react";
-import { Box, Button, Stack, TextField } from "@mui/material";
+import React, { useState, useEffect, useRef } from 'react';
+import { Orbitron } from 'next/font/google';
+import { Box, Button, TextField } from "@mui/material";
+import './globals.css';
+
+const orbitron = Orbitron({ subsets: ['latin'] });
 
 export default function Home() {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hello! I'm an AI assistant. How can I help you today?",
+      content: "Hi, I'm ProfBot. I'm here to provide information about professors so you can choose educators who will help optimize your time in school.",
     },
   ]);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const chatHistoryRef = useRef(null);
 
   const sendMessage = async () => {
     if (!message.trim()) return;
@@ -68,6 +74,16 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    if (chatHistoryRef.current) {
+      chatHistoryRef.current.scrollTop = chatHistoryRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <Box
       width="100vw"
@@ -76,65 +92,43 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      className={`main ${darkMode ? 'dark' : 'light'}`}
     >
-      <Stack
-        direction="column"
-        width="600px"
-        height="800px"
-        border="1px solid #ccc"
-        borderRadius="8px"
-        padding={2}
-        spacing={2}
-        sx={{ backgroundColor: "#f9f9f9", overflow: "hidden" }}
-      >
-        <Stack
-          direction="column"
-          spacing={2}
-          flexGrow={1}
-          overflow="auto"
-          padding={2}
-          sx={{ backgroundColor: "#fff", borderRadius: "8px" }}
-        >
+      <Box display="flex" justifyContent="space-between" alignItems="center" width="100%" maxWidth="600px" mb={2}>
+        <h1 className={`logo ${orbitron.className}`}>ProfBot</h1>
+        <button onClick={toggleDarkMode} className="modeToggle">
+          {darkMode ? '☀️' : '🌙'}
+        </button>
+      </Box>
+      <div className="chatContainer">
+        <div className="chatHistory" ref={chatHistoryRef}>
           {messages.map((msg, index) => (
-            <Box
-              key={index}
-              alignSelf={msg.role === "user" ? "flex-end" : "flex-start"}
-              bgcolor={msg.role === "user" ? "#e1f5fe" : "#e8f5e9"}
-              color="#000"
-              padding={2}
-              borderRadius="8px"
-              maxWidth="80%"
-              boxShadow="0 1px 3px rgba(0,0,0,0.1)"
-            >
+            <div key={index} className={msg.role === "user" ? "userMessage" : "botMessage"}>
               {msg.content}
-            </Box>
+            </div>
           ))}
           {loading && (
-            <Box alignSelf="flex-start" padding={2}>
+            <div className="botMessage">
               Thinking...
-            </Box>
+            </div>
           )}
-        </Stack>
-        <Stack direction="row" spacing={2}>
+        </div>
+        <form onSubmit={(e) => { e.preventDefault(); sendMessage(); }} className="inputForm">
           <TextField
-            label="Type your message..."
-            fullWidth
-            variant="outlined"
+            type="text"
+            placeholder="Type your message..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            onKeyPress={(e) => {
-              if (e.key === "Enter" && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage();
-              }
-            }}
+            className="input"
+            fullWidth
+            variant="outlined"
             disabled={loading}
           />
-          <Button variant="contained" color="primary" onClick={sendMessage} disabled={loading}>
-            Send
+          <Button type="submit" className="sendButton" variant="contained" color="primary" disabled={loading}>
+            SEND
           </Button>
-        </Stack>
-      </Stack>
+        </form>
+      </div>
     </Box>
   );
 }
