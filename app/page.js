@@ -10,7 +10,7 @@ export default function Home() {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: "Hello! I'm an AI assistant. How can I help you today?",
+      content: "Hi, I'm ProfBot. I'm here to provide information about professors so you can choose educators who will help optimize your time in school.",
     },
   ]);
   const [message, setMessage] = useState("");
