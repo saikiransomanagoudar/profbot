@@ -1,4 +1,5 @@
 # ProfBot
+![profbot_thumbnail](https://github.com/user-attachments/assets/5f4bdf2f-b6c3-4e66-a9b9-207a5ad9e414)
 
 ## About the Project
 
